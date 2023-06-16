@@ -2,7 +2,7 @@
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
 
-## Criteria
+# Criteria
 This project was carefully designed to meet the criteria specified by the June 2023 Hackaton organisers.
 To the best of our knowledge, this project will provide the first dedicated platform to link members of the LGBTQ+ community with appropriate online (youtube videos,  movies, etc...) and other (events, books and more) resources to help them overcome the emotional distress caused by daily life struggles in our society. The idea is to allow users to provide advice amongst them on specific subjects.
 To facilitate the collaboration among the developer team, all members were provided with access to the GitHub project, which was deployed using the Django framework.  Django is a powerful and free source platform widely used on industrial applications and ranking as one of the most popular web frameworks.The website was succesfully  deployed satisfying the developer team expectations and goals.
