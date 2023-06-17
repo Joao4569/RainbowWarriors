@@ -73,11 +73,11 @@ class Event(models.Model):
     title = models.CharField(max_length=200, null=False, blank=False)
 
     # Foreign key to Django User model
-    author = models.ForeignKey(User.username, editable=False)
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               editable=False)
 
     # Image field - Non Compulsory
-    feat_image = models.ImageField(storage=RawMediaCloudinaryStorage(
-                                   folder='event_images'),
+    feat_image = models.ImageField(storage=RawMediaCloudinaryStorage(),
                                    verbose_name='image', null=True, blank=True)
 
     # Approval field preset to false
@@ -118,13 +118,13 @@ class Comment(models.Model):
     A model for storing comments for events - Johnny
     """
     # Foreign key to Event model
-    event = models.ForeignKey(Event, editable=False)
+    event = models.ForeignKey(Event, editable=False, on_delete=models.CASCADE)
 
     # Foreign key to Django User model
-    author = models.ForeignKey(User.username, editable=False)
+    author = models.ForeignKey(User, editable=False, on_delete=models.CASCADE)
 
     # Foreign key to Django User model
-    author_email = models.ForeignKey(User.email, editable=False)
+    author_email = models.EmailField()
 
     # Compulsory field
     title = models.CharField(max_length=200, null=False, blank=False)
