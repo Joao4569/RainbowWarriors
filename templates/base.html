@@ -8,14 +8,23 @@
         <title>Rainbow Warriors - {% block title %}{% endblock %} </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- CSS section -->
+        {% block extra_css %}
+        {% endblock %}
         <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+        <!-- JS section -->
+        {% block onload_js %}
+        {% endblock %}
     </head>
     <body>
         {% include 'includes/header.html' %}
         <main>
-
+            {% block content %}
+            {% endblock %}
         </main>
-        
+        {% include 'includes/footer.html' %}
         <script src="" async defer></script>
     </body>
 </html>
