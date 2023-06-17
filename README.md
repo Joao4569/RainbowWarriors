@@ -33,7 +33,7 @@ The Category model includes information about the Resource to differentiate betw
 
 The entity relationship diagram was created using a spreadsheet environment and shows the schemas for each of the models and how they are related.
 
-![Relational DB](./readme_assets/images/relational_db.png)]
+![Relational DB](./readme_assets/images/relational_db.png)
 
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
