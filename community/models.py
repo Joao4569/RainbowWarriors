@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 # Import receiver decorator from Django built-in signals framework - Johnny
 from django.dispatch import receiver
+# Import countryfield - Johnny
+from django_countries.fields import CountryField
 
 
 class UserProfile(models.Model):
@@ -34,7 +36,7 @@ class UserProfile(models.Model):
     default_postcode = models.CharField(max_length=20, null=False)
 
     # Compulsory field
-    default_country = models.CharField(max_length=40, null=False)
+    default_country = CountryField(null=False)
 
     # In Django models, this is used to define how an instance of the model
     # should be represented as a string.

@@ -3,6 +3,7 @@ backports.zoneinfo==0.2.1
 dj-database-url==2.0.0
 Django==4.2.2
 django-allauth==0.54.0
+django-countries==7.5.1
 oauthlib==3.2.2
 psycopg2==2.9.6
 PyJWT==2.7.0
