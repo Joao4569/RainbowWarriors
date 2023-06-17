@@ -36,6 +36,8 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  'rainbowwarriors-3624423ecf9b.herokuapp.com',
                  # Allowed my workspace as host - Johnny
                  '8000-joao4569-rainbowwarrior-copzqgw3pzv.ws-eu100.gitpod.io',
+                 #allow my workspace access - Debbie
+                 '8000-joao4569-rainbowwarrior-m3hy51i95r2.ws-eu100.gitpod.io',
                  ]
 
 
@@ -59,6 +61,9 @@ INSTALLED_APPS = [
     'home',
     # Apps - Johnny
     'community',
+    # Apps - Debbie
+    'resources'
+    
 ]
 
 SITE_ID = 1
