@@ -7,6 +7,10 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 # Import countryfield - Johnny
 from django_countries.fields import CountryField
+# Import for models to store media on Cloudinary
+from cloudinary_storage.storage import RawMediaCloudinaryStorage
+# Date and time field for models
+from django.utils import timezone
 
 
 class UserProfile(models.Model):
@@ -59,3 +63,77 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
     # Existing users: just save the profile
     instance.userprofile.save()
+
+
+class Event(models.Model):
+    """
+    An event model for storing event information - Johnny
+    """
+    # Compulsory field
+    title = models.CharField(max_length=200, null=False, blank=False)
+
+    # Foreign key to Django User model
+    author = models.ForeignKey(User.username, editable=False)
+
+    # Image field - Non Compulsory
+    feat_image = models.ImageField(storage=RawMediaCloudinaryStorage(
+                                   folder='event_images'),
+                                   verbose_name='image', null=True, blank=True)
+
+    # Approval field preset to false
+    approved = models.BooleanField(default=False)
+
+    # Compulsory description field
+    description = models.CharField(max_length=200, null=False, blank=False)
+
+    # This field will record the date and time of the original instance
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    # This field will record the date and time, everytime the instance is
+    # updated
+    updated_on = models.DateTimeField(auto_now=True)
+
+    # Johnny - Not sure what this field is supposed to do
+    # join_qty = ????????
+
+    # Compulsory scheduled time and date
+    scheduled_on = models.DateTimeField(null=False, blank=False)
+
+    # Compulsory field
+    country = CountryField(null=False)
+
+    # Compulsory field
+    city = models.CharField(max_length=40, null=False)
+
+    # Compulsory field
+    address = models.CharField(max_length=80, null=False)
+
+    latitude = models.DecimalField(max_digits=9, decimal_places=6)
+
+    longitude = models.DecimalField(max_digits=9, decimal_places=6)
+
+
+class Comment(models.Model):
+    """
+    A model for storing comments for events - Johnny
+    """
+    # Foreign key to Event model
+    event = models.ForeignKey(Event, editable=False)
+
+    # Foreign key to Django User model
+    author = models.ForeignKey(User.username, editable=False)
+
+    # Foreign key to Django User model
+    author_email = models.ForeignKey(User.email, editable=False)
+
+    # Compulsory field
+    title = models.CharField(max_length=200, null=False, blank=False)
+
+    # Compulsory field
+    body = models.CharField(max_length=500, null=False, blank=False)
+
+    # This field will record the date and time of the original instance
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    # Approval field preset to false
+    approved = models.BooleanField(default=False)
