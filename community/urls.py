@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('community/', views.community, name='community'),
+    path('', views.community, name='community'),
 ]
