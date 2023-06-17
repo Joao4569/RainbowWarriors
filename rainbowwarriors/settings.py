@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'community',
     # Apps - Debbie
     'resources'
-    
+
 ]
 
 SITE_ID = 1
