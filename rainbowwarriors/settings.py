@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['127.0.0.1', 
+ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
                  'rainbowwarriors-3624423ecf9b.herokuapp.com'
                  ]
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'allauth',  # Taken from Allauth docs
     'allauth.account',  # Taken from Allauth docs
     'allauth.socialaccount',  # Taken from Allauth docs
-    
+
     # Apps
     'home',
 ]
