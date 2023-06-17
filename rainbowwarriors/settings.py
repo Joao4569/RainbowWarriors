@@ -61,6 +61,8 @@ INSTALLED_APPS = [
     'community',
 ]
 
+SITE_ID = 1
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -78,7 +80,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
-                # os.path.join(BASE_DIR, 'templates', 'allauth'),
+                os.path.join(BASE_DIR, 'templates', 'allauth'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -166,6 +168,20 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+# Account Setup
+
+# username, email, or both to authenticate
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+# email field required
+ACCOUNT_EMAIL_REQUIRED = True
+# username field required at registration
+ACCOUNT_USERNAME_REQUIRED = True
+# email field verification needed: 'none' or 'mandatory'
+ACCOUNT_EMAIL_VERIFCATION = 'none'
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 
 # Static files (CSS, JavaScript, Images)
