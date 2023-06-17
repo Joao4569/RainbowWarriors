@@ -31,9 +31,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['127.0.0.1', 
+ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 'rainbowwarriors-3624423ecf9b.herokuapp.com'
+                 'rainbowwarriors-3624423ecf9b.herokuapp.com',
+                 # Allowed my workspace as host - Johnny
+                 '8000-joao4569-rainbowwarrior-copzqgw3pzv.ws-eu100.gitpod.io',
                  ]
 
 
@@ -46,15 +48,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-    
-    # Auth
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    
+
+    # Johnny, Django Allauth
+    'django.contrib.sites',  # Taken from Allauth docs
+    'allauth',  # Taken from Allauth docs
+    'allauth.account',  # Taken from Allauth docs
+    'allauth.socialaccount',  # Taken from Allauth docs
+
     # Apps
     'home',
+    # Apps - Johnny
+    'community',
 ]
 
 SITE_ID = 1
@@ -90,13 +94,26 @@ TEMPLATES = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = [
-    # Needed to login by username in Django admin, regardless of `allauth`
+# Django Allauth authentication setup by Johnny
+
+# Uncommented by Johnny after Allauth installation
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of allauth.
     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as login by e-mail
+    # Allauth specific authentication methods, i.e. login by email.
     'allauth.account.auth_backends.AuthenticationBackend',
-]
+)
+
+SITE_ID = 1
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'rainbowwarriors.wsgi.application'
 
@@ -104,10 +121,23 @@ WSGI_APPLICATION = 'rainbowwarriors.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+# Commented out by Johnny
+# DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+# }
 
+# Database logic - Johnny
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

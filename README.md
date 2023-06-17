@@ -38,6 +38,26 @@ The entity relationship diagram was created using a spreadsheet environment and 
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
+### Tech Stack
+
+For the development of Rainbow warriors we made use of the following stack of technologies:
+
+- Front-End
+ - HTML3
+ - CSS5
+ - Tailwind CSS
+
+- Back-End
+ - Python
+ - Django
+ - Postgres
+
+### Dependencies
+
+- Heroku
+- Cloudinary
+
+
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 - 🙌 [Deborah_alumni]
