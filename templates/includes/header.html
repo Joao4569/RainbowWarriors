@@ -9,7 +9,7 @@
 
                 <!-- logo -->
                 <div class="flex justify-center logo">
-                    <a href="{% url 'home' %}" class="flex items-center"><img src="{% static '/images/logo.webp' %}" class="mr-3 h-32" alt="Rainbow WarriorsLogo"></a>
+                    <a href="{% url 'home' %}" class="flex items-center"><img src="{% static 'images/logo.webp' %}" class="mr-3 h-32" alt="Rainbow WarriorsLogo"></a>
                 </div>
 
                 <!-- primary nav -->
@@ -85,14 +85,14 @@
                         <!-- authentication -->
                         {% if request.user.is_authenticated %}
                         <a href="{% url 'community' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
-                            <img src="{% static '/images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
+                            <img src="{% static 'images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
                         </a>
                         <a href="{% url 'account_logout' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
                             Log out
                         </a>
                         {% else %}
                         <a href="{% url 'account_login' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
-                            <img src="{% static '/images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
+                            <img src="{% static 'images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
                         </a>
                         <a href="{% url 'account_signup' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
                             Sign-up
@@ -185,14 +185,14 @@
                             <!-- authentication -->
                             {% if request.user.is_authenticated %}
                             <a href="{% url 'community' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
-                                <img src="{% static '/images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
+                                <img src="{% static 'images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
                             </a>
                             <a href="{% url 'account_logout' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
                                 Log out
                             </a>
                             {% else %}
                             <a href="{% url 'account_login' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
-                                <img src="{% static '/images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
+                                <img src="{% static 'images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
                             </a>
                             <a href="{% url 'account_signup' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
                                 Sign-up
