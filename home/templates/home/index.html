@@ -8,21 +8,21 @@
 
 <div class='banner bg-[url("https://res.cloudinary.com/aelfrith/image/upload/v1687091458/static/images/matt-forfar-n5UNkNDBLn4-unsplash%20%282%29.9a116f8d7583.webp")] w-full bg-cover bg-bottom py-32 px-20'>
     <div class="flex flex-col items-start justify-end h-full">
-        <h4 class="text-2xl text-white text-left mb-2">Welcome</h4>
-        <h2 class="text-6xl font-bold text-white text-left mb-4">Rainbow Warriors</h2>
+        <h4 class="text-2xl text-white text-left mb-2" style="text-shadow: 2px 2[x #1F2937;">Welcome</h4>
+        <h2 class="text-6xl font-bold text-white text-left mb-4" style="text-shadow: 3px 3px #1F2937;">Rainbow Warriors</h2>
         <div class="flex flex-row gap-4 justify-start items-center">
             {% if request.user.is_authenticated %}
-            <a type="button" href="{% url 'resources' %}" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Resources</a>
+            <a type="button" href="{% url 'resources' %}" class="text-white border border-yellow-400 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Resources</a>
             {% else %}
-            <a type="button" href="{% url 'account_login' %}" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Login</a>
+            <a type="button" href="{% url 'account_login' %}" class="text-white border border-yellow-400 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Login</a>
             <a type="button" href="{% url 'account_signup' %}" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Register</a>
             {% endif %}
         </div>
     </div>
 </div>
 
-<div class="lg:flex w-full mx-auto px-4 py-8 bg-orange-50 dark:bg-gray-300">
-    <div class="w-full lg:w-2/3 bg-orange-50 h-auto lg:pr-16 p-5 lg:ml-4 mb-8 lg:mb-4 rounded-3xl border-2 border-gray-900 dark:text-white  dark:bg-gray-500" style="
+<div class="lg:flex w-full mx-auto px-4 py-8 bg-orange-50 dark:bg-gray-800">
+    <div class="w-full lg:w-2/3 bg-orange-50 h-auto lg:pr-16 p-5 lg:ml-4 mb-8 lg:mb-4 rounded-3xl border-2 border-gray-900 dark:text-white dark:bg-gray-600" style="
 box-shadow: -15px 15px #DC2626;
 ">
         <h1 class="text-2xl mb-3 font-bold">Large Box</h1>
@@ -65,7 +65,7 @@ box-shadow: -15px 15px #DC2626;
         </ul>
     </div>
     <div class="w-full lg:w-1/3 flex flex-col justify-evenly lg:-ml-12">
-        <div class="bg-orange-50 h-32 p-6 mb-8 lg:mb-4 lg:ml-2 rounded-3xl shadow border-2 border-gray-900 dark:text-white dark:bg-gray-500" style="
+        <div class="bg-orange-50 h-32 p-6 mb-8 lg:mb-4 lg:ml-2 rounded-3xl shadow border-2 border-gray-900 dark:text-white dark:bg-gray-600" style="
 box-shadow: -10px 10px #EA580C;
 ">
             <ul>
