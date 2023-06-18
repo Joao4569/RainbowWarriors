@@ -5,8 +5,22 @@
 
 {% block content %} 
 
+<div class="resource-container grid grid-cols-3 gap-2">
 {% for resource in resources %}
-<div>{{ resource.title }}</div>
+
+    <div class="resource-item">
+      <div class="image-container">
+        <img src="{{ resource.image_preview.url }}" alt="{{ resource.description }}">
+      </div>
+      <div class="content-container">
+        <h3 class="title">{{ resource.title }}</h3>
+        <p class="author">Posted by {{ resource.submitted_by }}</p>
+        <p class="description">{{ resource.description }}</p>
+        <p class="date">{{ resource.updated_on }}</p>
+      </div>
+    </div>
+
 {% endfor %}
+</div>
 
 {% endblock %}
