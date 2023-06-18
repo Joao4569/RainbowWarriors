@@ -8,7 +8,7 @@
 
                 <!-- logo -->
                 <div class="flex justify-center logo">
-                    <a href="./index.html" class="flex items-center"><img src="{% static '/images/logo.png' %}" class="mr-3 h-32" alt="Rainbow WarriorsLogo"></a>
+                    <a href="{% url 'home' %}" class="flex items-center"><img src="{% static '/images/logo.png' %}" class="mr-3 h-32" alt="Rainbow WarriorsLogo"></a>
                 </div>
 
                 <!-- primary nav -->
@@ -16,52 +16,49 @@
                     <nav class="top-nav">
                         <ul class="flex flex-col lg:flex-row lg:self-center pt-6 pb-3 lg:py-0 text-sm">
                           <li>
-                            <a href="./index.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Home</a>
+                            <a href="{% url 'home' %}" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Home</a>
                           </li>
                           <li class="group">
-                            <a href="./resources" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Resources
+                            <a href="{% url 'resources' %}" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Resources
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 transform -rotate-90 -mt-1 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                 </span>
                             </a>
                             <ul class="sub-menu dark:bg-white absolute left-0 top-full mt-2 bg-white shadow-lg hidden group-hover:block">
                               <li class="pl-3 py-2">
-                                <a href="./readings.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Readings</a>
+                                <a href="{% url 'resources' %}?category=readings" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Readings</a>
                               </li>
                               <li class="pl-3 py-2">
-                                <a href="./media.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Media
+                                <a href="{% url 'resources' %}?category=media" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Media
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 transform -rotate-90 -mt-1 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                 </span>
                                 </a>
                                 <ul class="sub-menu dark:bg-white absolute left-full top-0 mt-0 ml-2 bg-white shadow-lg hidden group-hover:block">
                                   <li class="pl-3 py-2">
-                                    <a href="./music.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Music</a>
+                                    <a href="{% url 'resources' %}?category=music" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Music</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./movies.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Movies</a>
+                                    <a href="{% url 'resources' %}?category=movies" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Movies</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./tv-series.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">TV Series</a>
+                                    <a href="{% url 'resources' %}?category=tvseries" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">TV Series</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./news.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">News</a>
+                                    <a href="{% url 'resources' %}?category=news" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">News</a>
                                   </li>
                                 </ul>
-                              </li>
-                              <li class="pl-3 py-2">
-                                <a href="./past-events.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Past Events</a>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="./stories.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Stories</a>
+                            <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Stories</a>
                           </li>
                           <li>
-                            <a href="./events.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Events</a>
+                            <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Events</a>
                           </li>
                           <li>
-                            <a href="./support.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Support</a>
+                            <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Support</a>
                           </li>
                         </ul>
                       </nav>
@@ -85,7 +82,7 @@
                             </label>
                           </div>
 
-                        <a href="/login" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
+                        <a href="{% url 'account_login' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
                             <img src="{% static '/images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
                             <img src="{% static '/images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
                         </a>
@@ -112,49 +109,46 @@
                             <a href="./index.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Home</a>
                           </li>
                           <li class="group">
-                            <a href="./resources" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Resources
+                            <a href="{% url 'resources' %}" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Resources
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 transform -rotate-90 -mt-1 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                 </span>
                             </a>
                             <ul class="sub-menu dark:bg-white absolute left-0 top-full mt-2 bg-white shadow-lg hidden group-hover:block">
                               <li class="pl-3 py-2">
-                                <a href="./readings.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Readings</a>
+                                <a href="{% url 'resources' %}?category=readings" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Readings</a>
                               </li>
                               <li class="pl-3 py-2">
-                                <a href="./media.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Media
+                                <a href="{% url 'resources' %}?caegory=media" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Media
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 transform -rotate-90 -mt-1 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                 </span>
                                 </a>
                                 <ul class="sub-menu dark:bg-white absolute left-full top-0 mt-0 ml-2 bg-white shadow-lg hidden group-hover:block">
                                   <li class="pl-3 py-2">
-                                    <a href="./music.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Music</a>
+                                    <a href="{% url 'resources' %}?category=music" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Music</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./movies.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Movies</a>
+                                    <a href="{% url 'resources' %}?category=movies" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Movies</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./tv-series.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">TV Series</a>
+                                    <a href="{% url 'resources' %}?category=tvseries" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">TV Series</a>
                                   </li>
                                   <li class="pl-3 py-2">
-                                    <a href="./news.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">News</a>
+                                    <a href="{% url 'resources' %}?category=news" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">News</a>
                                   </li>
                                 </ul>
                               </li>
                               <li class="pl-3 py-2">
-                                <a href="./past-events.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Past Events</a>
+                                <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Events</a>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="./stories.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Stories</a>
+                            <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Stories</a>
                           </li>
                           <li>
-                            <a href="./events.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Events</a>
-                          </li>
-                          <li>
-                            <a href="./support.html" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Support</a>
+                            <a href="#" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500">Support</a>
                           </li>
                         </ul>
                       </nav>
@@ -176,7 +170,7 @@
                                 </label>
                             </div>
 
-                            <a href="{% url 'account_login' %}" class="login-logout lg:inline-block text-center background-animation" aria-label="Login / Logout button">
+                            <a href="/accounts/login/" class="login-logout lg:inline-block text-center background-animation" aria-label="Login / Logout button">
                                 <img src="{% static '/images/logged-in.svg' %}" class="logged-in h-10" alt="Logged In image">
                                 <img src="{% static '/images/logged-out.svg' %}" class="logged-out h-10" alt="Logged Out image">
                             </a>
