@@ -33,6 +33,10 @@ header:after {
     background-image: linear-gradient(to right, #090a0a 0%, #090a0a 9%, #63362b 9%, #63362b 18%, #b7322f 18%, #b7322f 27%, #dc6b33 27%, #dc6b33 36%, #facc48 36%, #facc48 45%, #51a54e 45%, #51a54e 54%, #2ba7e2 54%, #2ba7e2 63%, #6b2a80 63%, #6b2a80 72%, #e38fb5 72%, #e38fb5 81%, #f2f2f2 81%, #f2f2f2 90%, #80c5de 90%, #80c5de 100% );
 }
 
+.active_page {
+    border-bottom: 1px solid #004DFF;
+}
+
 footer:before {
     position: absolute;
     top: 0;
