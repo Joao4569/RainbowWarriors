@@ -44,6 +44,13 @@ class Resources(models.Model):
     # Compulsory field
     approved = models.BooleanField(default=False)
 
+    # The users should be able to link a public URL to their resources
+    # Optional
+    public_url = models.URLField(max_length=500,
+                                 null=True,
+                                 blank=True)
+    
+    # This field will let 
     # In Django models, this is used to define how an instance of the model
     # should be represented as a string.
     def __str__(self):
