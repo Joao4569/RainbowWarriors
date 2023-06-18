@@ -14,16 +14,16 @@
                 <h3 class="text-gray-400 dark:text-white text-sm font-semibold uppercase mb-6">Resources</h3>
                 <ul>
                     <li class="pl-3 py-2">
-                        <a href="./music.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Music</a>
+                        <a href="{% url 'resources' %}?category=music" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Music</a>
                       </li>
                       <li class="pl-3 py-2">
-                        <a href="./movies.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Movies</a>
+                        <a href="{% url 'resources' %}?category=movies" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Movies</a>
                       </li>
                       <li class="pl-3 py-2">
-                        <a href="./tv-series.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">TV Series</a>
+                        <a href="{% url 'resources' %}?category=tvseries" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">TV Series</a>
                       </li>
                       <li class="pl-3 py-2">
-                        <a href="./news.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">News</a>
+                        <a href="{% url 'resources' %}?category=news" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">News</a>
                       </li>
                 </ul>
             </div>
