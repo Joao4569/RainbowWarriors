@@ -86,6 +86,57 @@ footer:before {
     100%{background-position:0% 50%}
 }
 
+/* resources alignment */
+
+.resource-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 75%;
+  }
+  
+  .resource-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 75%;
+  }
+  
+  .image-container {
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 200px; /* Altezza massima desiderata */
+    width: auto;
+    height: auto;
+  }
+  
+  /* .content-container {
+    flex: 1 0 auto;
+  } */
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .author {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: gray;
+  }
+
 @media (min-width:1024px) {
     /* Navbar & Menus */
     .top-nav {font-size: 1.5rem;text-align: right;}
