@@ -84,17 +84,17 @@
                         </div>
                         <!-- authentication -->
                         {% if request.user.is_authenticated %}
-                        <a href="{% url 'community' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
+                        <a href="{% url 'community' %}" class="lg:inline-block text-center" aria-label="Login / Logout button">
                             <img src="https://res.cloudinary.com/aelfrith/raw/upload/v1687082983/static/images/logged-in.svg" class="logged-in h-10" alt="Logged In image">
                         </a>
-                        <a href="{% url 'account_logout' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
+                        <a href="{% url 'account_logout' %}" class="lg:inline-block text-center" aria-label="Login / Logout button">
                             Log out
                         </a>
                         {% else %}
-                        <a href="{% url 'account_login' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
+                        <a href="{% url 'account_login' %}" class="lg:inline-block text-center" aria-label="Login / Logout button">
                             <img src="https://res.cloudinary.com/aelfrith/raw/upload/v1687082981/static/images/logged-out.svg" class="logged-out h-10" alt="Logged Out image">
                         </a>
-                        <a href="{% url 'account_signup' %}" class="login-logout lg:inline-block text-center" aria-label="Login / Logout button">
+                        <a href="{% url 'account_signup' %}" class="lg:inline-block text-center" aria-label="Login / Logout button">
                             Sign-up
                         </a>
                         {% endif %}
