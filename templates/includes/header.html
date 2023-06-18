@@ -15,7 +15,7 @@
   
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <a class="navbar-item" href="{% url 'home' %}">
           Home
         </a>
   
@@ -24,31 +24,31 @@
         </a>
   
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
+          <a class="navbar-link" href="{% url 'resources' %}">
             Resources
           </a>
   
           <div class="navbar-dropdown">
-            <a class="navbar-item">
+            <a class="navbar-item" href="{% url 'resources' %}?category=readings">
               Readings
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" href="{% url 'resources' %}?category=movies">
               Movies
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" href="{% url 'resources' %}?category=tvseries">
               TV Series
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" href="{% url 'resources' %}?category=news">
               News
             </a>
           </div>
         </div>
 
-        <a class="navbar-item">
+        <a class="navbar-item" href="{% url 'events' %}?category=news">
             Events
         </a>
         
-        <a class="navbar-item">
+        <a class="navbar-item" href="#">
             Support
         </a>
       </div>

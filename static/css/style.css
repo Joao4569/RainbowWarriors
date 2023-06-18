@@ -1,11 +1,5 @@
-/* Navigation menu */
-
-.navbar-item img {
-    max-height: unset;
-}
-
-/* sign-up background animation */
-.rainbow-button:hover {
+/* background animation */
+.background-animation:hover {
     background: linear-gradient(270deg, #d91b21, #f05e32, #e3f032, #32f04a, #3f32f0, #a332f0, #de32f0);
     background-size: 1400% 1400%;
 
