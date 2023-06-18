@@ -1,10 +1,7 @@
 from django.contrib import admin
-# Import UserProfile model - Johnny
-from .models import UserProfile
-# Import Event model - Johnny
-from .models import Event
-# Import Comment model - Johnny
-from .models import Comment
+# Import models - Johnny
+from .models import UserProfile, Event, Comment
+
 
 # Register your models here.
 
