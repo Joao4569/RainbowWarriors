@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Resources{% endblock %} 
 
 {% block content %} 
 
-<!-- Here goes the content -->
-<h1>Hello World!</h1>
+{% for resource in resources %}
+<div>{{ resource.title }}</div>
+{% endfor %}
 
 {% endblock %}
