@@ -1,0 +1,69 @@
+{% load static %}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="{% static '/images/rainbow-warriors-logo.png' %}" width="78" height="78">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Situations
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Resources
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Readings
+            </a>
+            <a class="navbar-item">
+              Movies
+            </a>
+            <a class="navbar-item">
+              TV Series
+            </a>
+            <a class="navbar-item">
+              News
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item">
+            Events
+        </a>
+        
+        <a class="navbar-item">
+            Support
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary rainbow-button">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light rainbow-button">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>

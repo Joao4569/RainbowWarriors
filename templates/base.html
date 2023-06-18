@@ -11,6 +11,9 @@
         
         <!-- CSS section -->
         {% block extra_css %}
+        <!-- Temporary -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         {% endblock %}
         <link rel="stylesheet" href="{% static '/css/style.css' %}">
 
@@ -25,6 +28,7 @@
             {% endblock %}
         </main>
         {% include 'includes/footer.html' %}
-        <script src="" async defer></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src={% static '/js/script.js' %}
     </body>
 </html>
