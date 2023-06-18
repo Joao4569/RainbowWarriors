@@ -39,11 +39,19 @@ class Resources(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     # Compulsory field
-    submitted_by = models.OneToOneField(User, on_delete=models.CASCADE)
+    submitted_by = models.ForeignKey(User, related_name='resource_owner',
+                                     on_delete=models.CASCADE)
 
     # Compulsory field
     approved = models.BooleanField(default=False)
 
+    # The users should be able to link a public URL to their resources
+    # Optional
+    public_url = models.URLField(max_length=500,
+                                 null=True,
+                                 blank=True)
+    
+    # This field will let 
     # In Django models, this is used to define how an instance of the model
     # should be represented as a string.
     def __str__(self):
