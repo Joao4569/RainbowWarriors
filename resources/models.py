@@ -39,7 +39,8 @@ class Resources(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     # Compulsory field
-    submitted_by = models.OneToOneField(User, on_delete=models.CASCADE)
+    submitted_by = models.ForeignKey(User, related_name='resource_owner',
+                                     on_delete=models.CASCADE)
 
     # Compulsory field
     approved = models.BooleanField(default=False)
