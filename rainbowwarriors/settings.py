@@ -112,16 +112,9 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
-
 WSGI_APPLICATION = 'rainbowwarriors.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-joao4569-rainbowwarrior-copzqgw3pzv.ws-eu100.gitpod.io']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
