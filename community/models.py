@@ -108,9 +108,9 @@ class Event(models.Model):
     # Compulsory field
     address = models.CharField(max_length=80, null=False)
 
-    latitude = models.DecimalField(max_digits=9, decimal_places=6)
+    latitude = models.DecimalField(max_digits=9, decimal_places=6, null=True)
 
-    longitude = models.DecimalField(max_digits=9, decimal_places=6)
+    longitude = models.DecimalField(max_digits=9, decimal_places=6, null=True)
 
 
 class Comment(models.Model):
