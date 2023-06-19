@@ -26,8 +26,7 @@ class Resources(ListView):
         if query:
             resources = self.model.objects.filter(
                 Q(title__icontains=query) |
-                Q(description__icontains=query) |
-                Q(category__icontains=query)
+                Q(description__icontains=query)
             )
         else:
             resources = self.model.objects.all()
