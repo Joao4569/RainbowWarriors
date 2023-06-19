@@ -42,4 +42,4 @@ class Update_Resource(LoginRequiredMixin,
     
     def test_func(self):
         # unsolved bug lying here
-        return self.request.user == self.get_object().submitted_by
+        return self.request.user == self.get_object().submitted_by.username
