@@ -33,6 +33,7 @@ header:after {
     background-image: linear-gradient(to right, #090a0a 0%, #090a0a 9%, #63362b 9%, #63362b 18%, #b7322f 18%, #b7322f 27%, #dc6b33 27%, #dc6b33 36%, #facc48 36%, #facc48 45%, #51a54e 45%, #51a54e 54%, #2ba7e2 54%, #2ba7e2 63%, #6b2a80 63%, #6b2a80 72%, #e38fb5 72%, #e38fb5 81%, #f2f2f2 81%, #f2f2f2 90%, #80c5de 90%, #80c5de 100% );
 }
 
+/* Main Menu li:before element */
 .main-nav ul:first-of-type li:hover:before, .main-nav ul:first-of-type li:focus:before, .main-nav ul:first-of-type li:active:before {
   content: '';
   position: absolute;
@@ -56,6 +57,12 @@ footer:before {
     background: linear-gradient(to right, #E40303 0%,  #E40303 16.66%, #FF8C00 16.66%, #FF8C00 33.33%, #FFED00 33.33%, #FFED00 49.99%, #008026 49.99%, #008026 66.66%, #004DFF 66.66%, #004DFF 83.33%, #750787 83.33%, #750787 100%);  
 }
 
+/* Home Page Banner */
+.banner {
+  height:75vh;
+  height:75dvh;
+  width:auto;
+}
 
 /* Auth Elements */
 
@@ -188,4 +195,28 @@ footer:before {
         display: block;
         margin: 0;
     }
+}
+
+/* Back to top */
+.back-to-top.show {
+  opacity: 1;
+  transform: translatey(0px);
+  pointer-events: all;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #16A34A;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 0;
+  transform: translatey(-30px);
+  transition: all 1s;
+  background: #fff url("../images/rainbow-up.png") no-repeat center / 60% !important;
+  box-shadow: 0 0 0 3px #16A34A, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+  z-index: 99;
 }
