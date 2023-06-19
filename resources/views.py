@@ -29,7 +29,7 @@ class Resources(ListView):
                 Q(category__icontains=query)
             )
         else:
-            Resources = self.model.objects.all()
+            resources = self.model.objects.all()
         return resources
 
 
