@@ -93,3 +93,53 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start the carousel
   startCarousel();
 });
+
+
+// CONTACT FORM
+
+/* 
+ * Wait for the DOM to finish loading, and add form submit event listener
+ * Code adapted from EmailJS tutorial at
+ * https://www.emailjs.com/docs/tutorial/creating-contact-form/
+ */
+
+// EmailJS Contact Form
+document.addEventListener('DOMContentLoaded', function () {
+  const feedbackSubmit = document.getElementsByClassName("submit-contact-button");
+
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.init("LgGJwNhTPTHbw2LbP"); // https://dashboard.emailjs.com/admin/account
+
+      // generate a five digit number for the contact_number variable EG. #7659
+      this.contact_number.value = Math.random() * 100000 | 0;
+
+      feedbackSubmit.value = 'Sending...';
+
+      emailjs.sendForm('send_rainbow', 'sci_fi_quiz_feedback', this)
+          .then(function () {
+              feedbackSubmit.value = 'Send Email';
+              showThankYou();
+          }, function (error) {
+              console.log(JSON.stringify(err));
+          });
+  });
+});
+
+/**
+* Shows a thank you message in the form area once the form
+* has been sent
+* @function showThankYou
+*/
+function showThankYou() {
+  let messageArea = document.getElementById('contact-container');
+  let thankyouMessage = `
+  <h2>YOUR MESSAGE HAS BEEN SENT</h2>
+  <br>
+  <p>Thank you for reaching out to us. We have received your message and will get back to you as soon as possible.</p>
+  <p>In the meantime, feel free to explore our website for more information about our services and resources.</p>
+  <p>Best regards,</p>
+  <p>Your Website Team</p>`;
+
+  messageArea.innerHTML = thankyouMessage;
+}
