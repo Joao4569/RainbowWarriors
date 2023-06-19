@@ -44,7 +44,7 @@ class Resources(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     # Compulsory field
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     # The users should be able to link a public URL to their resources
     # Optional
