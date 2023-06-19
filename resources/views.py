@@ -5,6 +5,9 @@ from django.views.generic import (
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
+from django.db.models.query import QuerySet
+from django.db.models import Q
+
 from .forms import ResourceForm
 from .models import Resources
 # Create your views here.
@@ -16,6 +19,18 @@ class Resources(ListView):
     template_name = 'resources/resources.html'
     model = Resources
     context_object_name = "resources"
+    
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            resources = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(description__icontains=query) |
+                Q(category__icontains=query)
+            )
+        else:
+            Resources = self.model.objects.all()
+        return resources
 
 
 class Add_Resource(LoginRequiredMixin, CreateView):
@@ -27,7 +42,7 @@ class Add_Resource(LoginRequiredMixin, CreateView):
     success_url = "/resources/"
 
     def form_valid(self, form):
-        form.instance.submitted_by = self.request.user
+        form.instance.user = self.request.user
         return super(Add_Resource, self).form_valid(form)
 
 
@@ -41,9 +56,17 @@ class Update_Resource(LoginRequiredMixin,
     success_url = '/resources/'
     
     def test_func(self):
-        request_user = self.request.user
-        # object_user = self.get_response()
-        # print (f'request_user = {request_user}')
-        # print (f'object = {object_user}')
-        # # unsolved bug lying here
-        # # return self.request.user == self.get_object().submitted_by
+         return self.request.user == self.get_object().user
+        
+
+class Delete_Resource(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a recipe"""
+    model = Resources
+    success_url = "/resources/"
+    template_name = "resources/resource_confirm_delete.html"
+    
+    def test_func(self):
+        # reads like: Is the person making the request
+        # the owner of the recipe?
+        recipe = self.get_object()
+        return self.request.user == recipe.user
