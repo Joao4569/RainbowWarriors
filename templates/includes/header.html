@@ -14,7 +14,7 @@
 
                 <!-- primary nav -->
                 <div class="hidden lg:flex lg:justify-start space-x-1">
-                    <nav class="top-nav">
+                    <nav class="main-nav">
                         <ul class="flex flex-col lg:flex-row lg:self-center pt-6 pb-3 lg:py-0 text-sm">
                           <li>
                             <a href="{% url 'home' %}" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500  {% if url_name == 'home' %}active_page{% endif %}">Home</a>
@@ -118,7 +118,7 @@
             <div class="mobile-menu hidden lg:hidden">
                 <!-- primary nav -->
                 <div class="grid grid-col-1 gap-2 justify-center margin-auto space-x-1">
-                    <nav class="top-nav text-center">
+                    <nav class="main-nav text-center">
                         <ul class="flex flex-col  pt-6 pb-3 text-sm">
                           <li>
                             <a href="{% url 'home' %}" class="font-medium text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500  {% if url_name == 'home' %}active_page{% endif %}">Home</a>
