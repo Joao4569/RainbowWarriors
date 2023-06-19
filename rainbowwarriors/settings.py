@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  # Allowed my workspace as host - Johnny
                  '8000-joao4569-rainbowwarrior-copzqgw3pzv.ws-eu100.gitpod.io',
                  #allow my workspace access - Debbie
-                 '8000-joao4569-rainbowwarrior-m3hy51i95r2.ws-eu100.gitpod.io',
+                 '8000-joao4569-rainbowwarrior-a59t29eyhr3.ws-eu100.gitpod.io',
                  ]
 
 
