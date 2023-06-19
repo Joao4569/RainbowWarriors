@@ -1,5 +1,5 @@
 # 🌈 Pride Representation 🥳
-![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
+![Project screenshot](readme_assets/images/screenshot.png)
 
 
 ## Criteria
@@ -35,6 +35,18 @@ The entity relationship diagram was created using a spreadsheet environment and 
 
 ![Relational DB](./readme_assets/images/relational_db.png)
 
+### Wireframing
+
+The initial homepage was designed as follows-
+
+![Wireframing](./readme_assets/images/Home_Page.png)
+
+The related Resources had an alternated layout, however, a grid was instead implemented, trying to familiarize with the CSS framework tailwind
+
+![Wireframing](./readme_assets/images/Movies.png)
+![Wireframing](./readme_assets/images/news.png)
+![Wireframing](./readme_assets/images/Readings.png)
+
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
@@ -60,10 +72,15 @@ For the development of Rainbow warriors we made use of the following stack of te
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
-- 🙌 [Deborah_alumni]
-- 🙌 [Devan_Cadman_4P]
-- 🙌 [Johnny_5p]
-- 🙌 [Alfredo Morieri_5P]
-- 🙌 [Efren_Andablo]
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
+- 🙌 Deborah_alumni for deployment, back-end, presentation video and content.
+- 🙌 Devan_Cadman_4P for front-end, logo, favicon and Tailwind Skills.
+- 🙌 Johnny_5p for being scrum master, back-end and readme.
+- 🙌 Alfredo Morieri_5P for full-stack, content ideas and loads of effort!
+- 🙌 Efren_Andablo for project idea, sourcing content, sourcing images and for readme.
+
+### Media
+- All images in Rainbow Warriors were sourced and taken from 🌐 [Unsplash.com](https://unsplash.com/) and 🌐 [Pexels.com](https://www.pexels.com/).
+- The logo was created by Devan using 🌐 [Adobe Illustrator](https://www.adobe.com/ch_de/products/illustrator.html?gclid=CjwKCAjw-b-kBhB-EiwA4fvKrLBR86HNoP_vB2Buj8Pl0LZK1BQpXXPuBGaZwiYWNTOzZ-n6EdE-IxoCeoAQAvD_BwE&mv=search&sdid=KCJMVLF6&ef_id=CjwKCAjw-b-kBhB-EiwA4fvKrLBR86HNoP_vB2Buj8Pl0LZK1BQpXXPuBGaZwiYWNTOzZ-n6EdE-IxoCeoAQAvD_BwE:G:s&s_kwcid=AL!3085!3!599952898749!e!!g!!adobe%20illustrator!1427752969!57597138233).
+- The original logo used as a base for our logo was sourced from 🌐 [Flaticon.com - Rainbow Icon](https://www.flaticon.com/free-icon/rainbow_5176055).
+- The logo was turned into a Favicon by using 🌐 [Real favicon generator](https://realfavicongenerator.net/)
+
