@@ -44,7 +44,7 @@ header:after {
   display: inline-block;
   width: 22px;
   height: 24px;
-  background-image: url("assets/images/rainbow.webp");
+  background-image: url("../images/rainbow.webp");
 }
 
 footer:before {
@@ -168,7 +168,6 @@ footer:before {
 }
 
 @media (max-width:1023px) {
-    nav {text-align: right;}
     nav ul {display: inline-block;}
     nav li {position: relative;}
     nav li a {display: inline-block;}
