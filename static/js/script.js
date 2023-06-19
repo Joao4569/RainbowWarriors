@@ -39,3 +39,14 @@ document.body.addEventListener('click', function(event) {
         });
     }
 });
+
+// Get all the Sub-Menu triggers
+const accordionTriggers = document.querySelectorAll('.sub-menu-trigger');
+
+// Attach click event listener to each accordion trigger
+accordionTriggers.forEach((trigger) => {
+  // Toggle the visibility of the Sub-Menu content on click
+  trigger.addEventListener('click', () => {
+    trigger.nextElementSibling.classList.toggle('hidden');
+  });
+});
