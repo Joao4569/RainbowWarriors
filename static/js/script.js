@@ -50,3 +50,46 @@ accordionTriggers.forEach((trigger) => {
     trigger.nextElementSibling.classList.toggle('hidden');
   });
 });
+
+// Carousel
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".sliderAx > div");
+  const prevButton = document.querySelector(".slider-button.prev");
+  const nextButton = document.querySelector(".slider-button.next");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+      currentIndex = 0;
+    }
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = slides.length - 1;
+    }
+    showSlide(currentIndex);
+  }
+
+  function startCarousel() {
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  }
+
+  // Event listeners for previous and next buttons
+  prevButton.addEventListener("click", prevSlide);
+  nextButton.addEventListener("click", nextSlide);
+
+  // Start the carousel
+  startCarousel();
+});
