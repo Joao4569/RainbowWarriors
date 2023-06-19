@@ -27,7 +27,6 @@ class Resources(models.Model):
                                     null=True,
                                     blank=True)
                                       
-
     # Compulsory description field
     description = models.CharField(max_length=200, null=False, blank=False)
 

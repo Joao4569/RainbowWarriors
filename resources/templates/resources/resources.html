@@ -17,6 +17,11 @@
         <p class="author">Posted by {{ resource.submitted_by }}</p>
         <p class="description">{{ resource.description }}</p>
         <p class="date">{{ resource.updated_on }}</p>
+        <!-- johnny testing -->
+        {% if request.user == resource.submitted_by %}
+        {{ resource.id }}
+        <a href="{% url 'update_resource' resource.id %}" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">push me!</a>
+        {% endif %}
       </div>
     </div>
     {% if request.user.is_authenticated%}
