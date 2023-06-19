@@ -225,3 +225,44 @@ footer:before {
   box-shadow: 0 0 0 3px #16A34A, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
   z-index: 99;
 }
+
+/* Carousel */
+.sliderAx {
+  position: relative;
+  height: auto;
+}
+.sliderAx > div {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.sliderAx > div.active {
+  opacity: 1;
+}
+.sliderAx .slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(128, 128, 128, 0.3);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease-in-out;
+}
+.sliderAx .slider-button:hover {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+.sliderAx .slider-button.prev {
+  left: 30%;
+}
+.sliderAx .slider-button.next {
+  right: 30%;
+}
