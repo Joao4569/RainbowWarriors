@@ -266,3 +266,6 @@ footer:before {
 .sliderAx .slider-button.next {
   right: 30%;
 }
+
+  /* Search */
+  #searchSection {background: linear-gradient(to right, #E40303, #FF8C00, #FFED00, #008026 , #004DFF, #750787);  }
