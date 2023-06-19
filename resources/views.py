@@ -41,5 +41,9 @@ class Update_Resource(LoginRequiredMixin,
     success_url = '/resources/'
     
     def test_func(self):
-        # unsolved bug lying here
-        return self.request.user == self.get_object().submitted_by.username
+        request_user = self.request.user
+        # object_user = self.get_response()
+        # print (f'request_user = {request_user}')
+        # print (f'object = {object_user}')
+        # # unsolved bug lying here
+        # # return self.request.user == self.get_object().submitted_by
