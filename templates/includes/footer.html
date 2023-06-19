@@ -1,7 +1,7 @@
 {% load static %}
 
-<footer class="py-8 lg:pt-16 bg-gray-50 dark:bg-gray-800">
-    <div class="w-full max-w-8xl mx-auto px-4">
+<footer class="py-8 lg:pt-16 bg-orange-50 dark:bg-gray-800">
+    <div class="w-full max-w-6xl mx-auto px-4">
         <div class="grid lg:grid-cols-6 gap-12 lg:gap-8">
             <div class="col-span-2 logo">
                 <a href="{% url 'home' %}" class="flex items-center flex mb-6">
@@ -31,29 +31,35 @@
                 <h3 class="text-gray-400 dark:text-white text-sm font-semibold uppercase mb-6">Help and support</h3>
                 <ul>
                     <li class="pl-3 py-2">
-                        <a href="./contact-us.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Contact Us</a>
+                        <a href="./about.html" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">About Us</a>
                       </li>
-                    <li class="mb-4"><a href="/resources.html" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Media Center</a></li>
+                    <li class="pl-3 py-2">
+                        <a href="/#contact" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Contact</a>
+                      </li>
+                    <li class="pl-3 py-2 mb-4"><a href="/resources.html" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Media Center</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-gray-400 dark:text-white text-sm font-semibold uppercase mb-6">Follow us</h3>
                 <ul>
-                    <li class="mb-4"><a href="https://github.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Github</a></li>
-                    <li class="mb-4"><a href="https://twitter.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Twitter</a></li>
-                    <li class="mb-4"><a href="https://www.facebook.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Facebook</a></li>
-                    <li class="mb-4"><a href="https://ro.linkedin.com/company/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">LinkedIn</a></li>
+                    <li class="mb-4"><a href="https://github.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Github</a></li>
+                    <li class="mb-4"><a href="https://twitter.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Twitter</a></li>
+                    <li class="mb-4"><a href="https://www.facebook.com/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Facebook</a></li>
+                    <li class="mb-4"><a href="https://ro.linkedin.com/company/rainbow-warriors" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">LinkedIn</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-gray-400 dark:text-white text-sm font-semibold uppercase mb-6">Legal</h3>
                 <ul>
-                    <li class="mb-4"><a href="/privacy-policy" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Privacy Policy</a></li>
-                    <li class="mb-4"><a href="/terms-and-conditions" target="_blank" rel="noreferrer nofollow" class="text-gray-600 dark:text-gray-400 dark:hover:text-white font-normal hover:underline">Terms &amp; Conditions</a></li>
+                    <li class="mb-4"><a href="/privacy-policy" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Privacy Policy</a></li>
+                    <li class="mb-4"><a href="/terms-and-conditions" target="_blank" rel="noreferrer nofollow" class="font-normal text-gray-900 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-500 hover:underline">Terms &amp; Conditions</a></li>
                 </ul>
             </div>
         </div>
         <hr class="border-gray-200 dark:border-gray-700 my-6 lg:my-8">
-        <span class="block text-center text-gray-600 dark:text-gray-400 font-">© 2023 Rainbow Warriors. All Rights Reserved.</span>
+        <div class="sub-footer max-w-xl mx-auto">
+            <p class="block text-center text-gray-600 dark:text-gray-400 font-">© 2023 Rainbow Warriors. All Rights Reserved.</p>
+            <p class="block text-center text-gray-600 dark:text-gray-400">This website was created for educational purposes. By The <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com" target="_blank"> Rainbow Warriors - Team 2 CI Hackathon </a> for <a class="inline-block" href="https://codeinstitute.net/full-stack-software-development-diploma/" target="_blank"> <img class="max-h-6" src="https://devancadman.github.io/hosted-assets/code-institute-technology-logo.png" alt="Code Institute Logo"> </a> June 2023 Hackathon</p>
+        </div>
     </div>
 </footer>
