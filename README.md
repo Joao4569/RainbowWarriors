@@ -60,10 +60,13 @@ For the development of Rainbow warriors we made use of the following stack of te
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
-- 🙌 [Deborah_alumni]
-- 🙌 [Devan_Cadman_4P]
-- 🙌 [Johnny_5p]
-- 🙌 [Alfredo Morieri_5P]
-- 🙌 [Efren_Andablo]
+- 🙌 [Deborah_alumni] for deployment, back-end, presentation video and content.
+- 🙌 [Devan_Cadman_4P] for front-end, logo, favicon and Tailwind Skills.
+- 🙌 [Johnny_5p] for being scrum master, back-end and readme.
+- 🙌 [Alfredo Morieri_5P] for full-stack, content ideas and loads of effort!
+- 🙌 [Efren_Andablo] for project idea, sourcing content, sourcing images and for readme.
 - 🌐 [External Resource 1]
 - 🌐 [External Resource 2]
+- Favicon created using .......?
+- Logo created using ....?
+- Image credits ......?
