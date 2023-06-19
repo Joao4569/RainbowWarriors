@@ -1,5 +1,5 @@
 # 🌈 Pride Representation 🥳
-![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
+![Project screenshot](readme_assets/images/screenshot.png)
 
 
 ## Criteria
