@@ -1,6 +1,7 @@
 from django.views.generic import (
     CreateView, ListView,
-    DeleteView, UpdateView
+    DeleteView, UpdateView,
+    TemplateView
 )
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
@@ -70,3 +71,7 @@ class Delete_Resource(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         # the owner of the recipe?
         recipe = self.get_object()
         return self.request.user == recipe.user
+    
+    
+class Stories(TemplateView):
+    template_name = 'resources/stories.html'

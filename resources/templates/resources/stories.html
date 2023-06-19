@@ -5,6 +5,85 @@
 
 {% block content %} 
 
+    <!-- Intro Banner -->
+    <section class='banner bg-[url("images/matt-forfar-n5UNkNDBLn4-unsplash.webp")] w-full bg-cover bg-bottom py-32 px-20'>
+        <div class="flex flex-col items-center justify-center h-full">
+            <h1 class="text-6xl font-bold text-white text-left mb-4" style="text-shadow: 3px 3px #1F2937;">Stories</h1>
+        </div>
+    </section>
+
+    <main class="w-full mx-auto px-4 py-8 bg-orange-50 dark:bg-gray-800">
+
+    <!-- Stories Section -->
+    <section class="max-w-[1400px] text-center w-full mx-auto px-4 py-8 bg-orange-50 dark:bg-gray-800">
+      <div class="grid grid-cols-1 gap-8">
+
+        <a href="embracing-my-true-self.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Embracing My True Self</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"In the depths of my being, I knew I was different. I carried a secret within me, a truth that yearned to be set free. It took years of introspection, self-discovery, and a wave of courage to embrace my true self. Today, as a proud lesbian, I stand tall, radiating love and acceptance." - Maya</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+        </a>
+
+        <a href="love-without-limits.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Love Without Limits</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"Our love defied societal norms and boundaries. From the moment we locked eyes, we knew our connection was something extraordinary. As a non-binary person and a transgender individual, we embarked on a journey together, weaving a love story that shattered stereotypes and showcased the power of authentic connections." -  Sam and Alex</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+        </a>
+
+        <a href="finding-strength-in-community.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Finding Strength in Community</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> "The path to self-acceptance wasn't easy, but I discovered that I wasn't alone. Through the embrace of the LGBTQ+ community, I found a sense of belonging and support that gave me the strength to face my inner demons. Together, we rallied against prejudice, celebrated diversity, and ignited a beacon of hope for future generations." - Jamie</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+        </a>
+
+        <a href="a-journey-of-gender-exploration.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Journey of Gender Exploration</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"I had spent years questioning my gender identity, feeling like an imposter in my own skin. It wasn't until I stumbled upon the concept of non-binary that everything fell into place. I embarked on a profound journey of self-discovery, shedding societal expectations, and embracing the fluidity of my true identity." - Ryan</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+        </a>
+
+        <a href="a-familys-unconditional-love.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/leighann-blackwood-k8Q5awOhPaQ-unsplash.webp" alt="Rainbow Woman' %}">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Family's Unconditional Love
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"Our love bloomed amidst a world of prejudice and discrimination. As two women navigating the complexities of their identities, we discovered that true love knows no bounds. With unwavering support from our families, we embraced our journey and created a haven of acceptance and understanding." - Emma and Olivia</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+        </a>
+
+        <a href="embracing-bisexuality-a-journey-of-self-acceptance.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Embracing Bisexuality: A Journey of Self-Acceptance</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"I spent years grappling with my attraction to both genders, feeling the weight of societal expectations and the fear of judgment. But as I embarked on a journey of self-acceptance, I discovered the beauty of my bisexuality—a vibrant spectrum that defies labels and embraces love in all its forms." - Alex</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+        </a>
+
+        <a href="transcending-borders-love-across-cultures.html" class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-full md:rounded-none md:rounded-l-lg" src="{% static 'images/isi-parente-ReeGI822YKM-unsplash.webp' %}" alt="Rainbow Woman">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Transcending Borders: Love Across Cultures</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">"Our love blossomed across borders, transcending cultural barriers and defying societal expectations. As Amir, a proud Iranian, and Javier, a passionate Mexican, we found solace in each other's arms, embracing the richness of our diverse backgrounds and creating a love story that inspires others to embrace their own unique paths."" - Amir and Javier</p>
+              <p class="mb-3 text-gray-700 dark:text-gray-50">Read More ></p>
+          </div>
+        </a>
+
+      </div>
+    </section> 
 
 
 {% endblock %}
