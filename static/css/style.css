@@ -33,20 +33,6 @@ header:after {
     background-image: linear-gradient(to right, #090a0a 0%, #090a0a 9%, #63362b 9%, #63362b 18%, #b7322f 18%, #b7322f 27%, #dc6b33 27%, #dc6b33 36%, #facc48 36%, #facc48 45%, #51a54e 45%, #51a54e 54%, #2ba7e2 54%, #2ba7e2 63%, #6b2a80 63%, #6b2a80 72%, #e38fb5 72%, #e38fb5 81%, #f2f2f2 81%, #f2f2f2 90%, #80c5de 90%, #80c5de 100% );
 }
 
-/* Main Menu li:before element */
-.main-nav ul:first-of-type li:hover:before, .main-nav ul:first-of-type li:focus:before, .main-nav ul:first-of-type li:active:before {
-  content: '';
-  position: absolute;
-  left: 35%;
-  top: 18px;
-  background-size: 22px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 22px;
-  height: 24px;
-  background-image: url("../images/rainbow.webp");
-}
-
 footer:before {
     position: absolute;
     top: 0;
@@ -165,6 +151,20 @@ footer:before {
     .main-nav .sub-menu li{ display: block; margin: 0; background:#fff; }
     .main-nav .sub-menu li a{ padding: 1rem; display: block; margin: 0;}
     .main-nav li:hover > .sub-menu{opacity: 1;pointer-events:all;}
+
+    /* Main Menu li:before element */
+    .main-nav ul:first-of-type li:hover:before, .main-nav ul:first-of-type li:focus:before, .main-nav ul:first-of-type li:active:before {
+      content: '';
+      position: absolute;
+      left: 35%;
+      top: 18px;
+      background-size: 22px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      background-image: url("../images/rainbow.webp");
+    }
 }
 
 @media (max-width:1023px) {
