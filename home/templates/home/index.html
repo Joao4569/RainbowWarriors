@@ -7,7 +7,7 @@
 {% block content %} 
 
 <!-- Banner Welcome-->
-<section class='banner bg-[url("{% static 'images/matt-forfar-n5UNkNDBLn4-unsplash%20%282%29.9a116f8d7583.webp' %}")] w-full bg-cover bg-bottom py-32 px-20'>
+<section class='banner bg-[url("https://res.cloudinary.com/aelfrith/image/upload/v1687099936/static/images/matt-forfar-n5UNkNDBLn4-unsplash%20%282%29.9a116f8d7583.webp")] w-full bg-cover bg-bottom py-32 px-20'>
     <div class="flex flex-col items-start justify-end h-full max-w-6xl mx-auto px-4">
         <h4 class="text-2xl text-white text-left mb-2" style="text-shadow: 2px 2[x #1F2937;">Welcome</h4>
         <h2 class="text-6xl font-bold text-white text-left mb-4" style="text-shadow: 3px 3px #1F2937;">Rainbow Warriors</h2>
@@ -155,7 +155,7 @@
     <section id="searchSection" class="max-w-[1400px] lg:flex justify-center w-full mx-auto px-4 py-8 bg-orange-50 dark:bg-gray-800">
         <div class="w-full lg:w-2/3 bg-orange-50 h-auto lg:pr-16 p-10 lg:ml-4 mb-8 lg:mb-4 rounded-3xl border-2 border-gray-900 dark:text-white dark:bg-gray-600">
         <h3 class="text-2xl text-center font-bold mb-6">Search our site for Stories or resources</h3>
-        <form role="search" method="GET" action="{% url 'resources' %}>   
+        <form role="search" method="GET" action="{% url 'resources' %}">   
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -267,7 +267,7 @@
         box-shadow: -15px 15px #15803D;
         ">
         <div id="contact-container">
-            <img class="object-cover object-bottom flex-shrink-0 w-full max-h-72 mb-4" src="{% static 'assets/images/yoav-hornung-_FlNNNDezuw-unsplash.webp' %}">
+            <img class="object-cover object-bottom flex-shrink-0 w-full max-h-72 mb-4" src="{% static 'images/yoav-hornung-_FlNNNDezuw-unsplash.webp' %}">
             <h2 class="text-3xl mb-5">Get in Touch</h2>
             <form id="contact-form" class="">
                 <input type="hidden" name="contact_number">
