@@ -15,6 +15,11 @@ class Resources(models.Model):
     """
     A model for storing resource information
     """
+    
+    # Compulsory field
+    user = models.ForeignKey(User, related_name='resource_owner',
+                                     on_delete=models.CASCADE)
+    
     # Compulsory field
     title = models.CharField(max_length=200, null=False, blank=False)
 
@@ -39,10 +44,6 @@ class Resources(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     # Compulsory field
-    submitted_by = models.ForeignKey(User, related_name='resource_owner',
-                                     on_delete=models.CASCADE)
-
-    # Compulsory field
     approved = models.BooleanField(default=False)
 
     # The users should be able to link a public URL to their resources
@@ -55,7 +56,7 @@ class Resources(models.Model):
     # In Django models, this is used to define how an instance of the model
     # should be represented as a string.
     def __str__(self):
-        return self.title
+        return str(self.title)
 
 
 class Category(models.Model):

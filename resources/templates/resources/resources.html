@@ -14,16 +14,17 @@
       </div>
       <div class="content-container">
         <h3 class="title">{{ resource.title }}</h3>
-        <p class="author">Posted by {{ resource.submitted_by }}</p>
+        <p class="author">Posted by {{ resource.user }}</p>
         <p class="description">{{ resource.description }}</p>
         <p class="date">{{ resource.updated_on }}</p>
       </div>
     </div>
     {% if request.user.is_authenticated %}
-        {% if request.user == resource.submitted_by %}
+        {% if request.user == resource.user %}
         <div>
+            
             <a type="button" href="{% url 'update_resource' resource.id %}" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Update</a>
-            <a type="button" href="#" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Delete</a>
+            <a type="button" href="{% url 'delete_resource' resource.id %}" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Delete</a>
         </div>
         {% endif %}
     {% endif %}

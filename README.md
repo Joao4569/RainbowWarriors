@@ -35,6 +35,18 @@ The entity relationship diagram was created using a spreadsheet environment and 
 
 ![Relational DB](./readme_assets/images/relational_db.png)
 
+### Wireframing
+
+The initial homepage was designed as follows-
+
+![Wireframing](./readme_assets/images/Home_Page.png)
+
+The related Resources had an alternated layout, however, a grid was instead implemented, trying to familiarize with the CSS framework tailwind
+
+![Wireframing](./readme_assets/images/Movies.png)
+![Wireframing](./readme_assets/images/news.png)
+![Wireframing](./readme_assets/images/Readings.png)
+
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
