@@ -143,12 +143,12 @@ footer:before {
     .main-nav {font-size: 1.5rem;text-align: right;}
     .main-nav ul { margin: 0 auto; padding: 0rem;}
     .main-nav li { display: inline-block; margin: 0;padding:0; position: relative;}
-    .main-nav li a { display: inline-block; padding: 2.5rem 1rem;line-height: 1; color:#546A7B;}
+    .main-nav li a { display: inline-block; padding: 2.5rem 1rem;line-height: 1;}
     
     /* Submenus Dropdowns*/
     .main-nav .sub-menu{ position: absolute;padding: 0;bottom:0;left: 0; width: 200px;text-align: left;z-index:5;opacity:0;pointer-events:none;transition:all .5s;transform:translatey(100%);}
     .main-nav .sub-menu .sub-menu{position: absolute;top:0;right:0;transform:translatex(100%);width: 200px; text-align: left; z-index:10; }
-    .main-nav .sub-menu li{ display: block; margin: 0; background:#fff; }
+    .main-nav .sub-menu li{ display: block; margin: 0; }
     .main-nav .sub-menu li a{ padding: 1rem; display: block; margin: 0;}
     .main-nav li:hover > .sub-menu{opacity: 1;pointer-events:all;}
 
@@ -164,6 +164,12 @@ footer:before {
       width: 22px;
       height: 24px;
       background-image: url("../images/rainbow.webp");
+    }
+    .main-nav .sub-menu li:hover:before,
+    .main-nav .sub-menu li:focus:before,
+    .main-nav .sub-menu li:active:before,
+    .main-nav .sub-menu li:before {
+      display: none !important;
     }
 }
 
