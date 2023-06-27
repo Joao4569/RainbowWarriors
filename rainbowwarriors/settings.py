@@ -41,11 +41,11 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  ]
 
 # CLOUDINARY SETUP
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
-    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
-    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
-}
+# CLOUDINARY_STORAGE = {
+    # 'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    # 'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
+    # 'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
+# }
 
 
 # Application definition
