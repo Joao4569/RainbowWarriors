@@ -40,6 +40,13 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  '8000-joao4569-rainbowwarrior-m3hy51i95r2.ws-eu100.gitpod.io',
                  ]
 
+# CLOUDINARY SETUP
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
+    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
+}
+
 
 # Application definition
 
@@ -49,7 +56,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
 
     # Johnny, Django Allauth
     'django.contrib.sites',  # Taken from Allauth docs
