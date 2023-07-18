@@ -29,23 +29,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
                  'rainbowwarriors-3624423ecf9b.herokuapp.com',
                  # Allowed my workspace as host - Johnny
-                 '8000-joao4569-rainbowwarrior-copzqgw3pzv.ws-eu100.gitpod.io',
-                 #allow my workspace access - Debbie
-                 '8000-joao4569-rainbowwarrior-m3hy51i95r2.ws-eu100.gitpod.io',
+                 '8000-joao4569-rainbowwarrior-li0wnbdb2r2.ws-eu101.gitpod.io',
                  ]
 
 # CLOUDINARY SETUP
-# CLOUDINARY_STORAGE = {
-    # 'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
-    # 'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
-    # 'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
-# }
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
+    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
+}
 
 
 # Application definition
