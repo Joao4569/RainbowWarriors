@@ -38,14 +38,6 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  '8000-joao4569-rainbowwarrior-li0wnbdb2r2.ws-eu101.gitpod.io',
                  ]
 
-# CLOUDINARY SETUP
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
-    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
-    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
-}
-
-
 # Application definition
 
 INSTALLED_APPS = [
